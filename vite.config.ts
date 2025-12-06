@@ -12,7 +12,7 @@ export default defineConfig(({ mode }) => ({
   // --- START OF FIX ---
   preview: {
     allowedHosts: [
-      "lend-smart-page-2.onrender.com",
+      "https://lend-smart-page-2.onrender.com",
     ],
   },
   // --- END OF FIX ---
