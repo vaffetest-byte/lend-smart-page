@@ -23,3 +23,13 @@ export default defineConfig(({ mode }) => ({
     },
   },
 }));
+// vite.config.js
+import { defineConfig } from "vite";
+
+export default defineConfig({
+  preview: {
+    allowedHosts: [
+      "lend-smart-page-1.onrender.com"
+    ]
+  }
+});
