@@ -29,7 +29,7 @@ import { defineConfig } from "vite";
 export default defineConfig({
   preview: {
     allowedHosts: [
-      "lend-smart-page-1.onrender.com"
+      "lend-smart-page-2.onrender.com"
     ]
   }
 });
