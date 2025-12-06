@@ -9,10 +9,14 @@ export default defineConfig(({ mode }) => ({
     host: "::",
     port: 8080,
   },
-  plugins: [
-    react(),
-    mode === "development" && componentTagger(),
-  ].filter(Boolean),
+  // --- START OF FIX ---
+  preview: {
+    allowedHosts: [
+      "lend-smart-page-1.onrender.com",
+    ],
+  },
+  // --- END OF FIX ---
+  plugins: [react(), mode === "development" && componentTagger()].filter(Boolean),
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
