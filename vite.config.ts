@@ -11,9 +11,7 @@ export default defineConfig(({ mode }) => ({
   },
   // --- START OF FIX ---
   preview: {
-    allowedHosts: [
-      "https://lend-smart-page-2.onrender.com",
-    ],
+    allowedHosts: true
   },
   // --- END OF FIX ---
   plugins: [react(), mode === "development" && componentTagger()].filter(Boolean),
