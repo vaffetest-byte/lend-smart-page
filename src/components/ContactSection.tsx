@@ -108,8 +108,8 @@ const ContactSection = () => {
         <div className="container-custom">
           <div className="max-w-2xl mx-auto text-center">
             <div className="bg-card rounded-2xl p-12 shadow-medium">
-              <div className="w-20 h-20 rounded-full bg-green-100 flex items-center justify-center mx-auto mb-6">
-                <CheckCircle className="w-10 h-10 text-green-600" />
+              <div className="w-20 h-20 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-6">
+                <CheckCircle className="w-10 h-10 text-primary" />
               </div>
               <h2 className="heading-md text-foreground mb-4">
                 Thank You for Reaching Out!
@@ -157,8 +157,8 @@ const ContactSection = () => {
               </h3>
               <div className="space-y-6">
                 <div className="flex items-start gap-4">
-                  <div className="w-10 h-10 rounded-lg bg-gold/20 flex items-center justify-center flex-shrink-0">
-                    <Phone className="w-5 h-5 text-gold" />
+                  <div className="w-10 h-10 rounded-lg bg-accent/20 flex items-center justify-center flex-shrink-0">
+                    <Phone className="w-5 h-5 text-accent" />
                   </div>
                   <div>
                     <p className="text-primary-foreground/70 text-sm">Call Us</p>
@@ -167,8 +167,8 @@ const ContactSection = () => {
                 </div>
 
                 <div className="flex items-start gap-4">
-                  <div className="w-10 h-10 rounded-lg bg-gold/20 flex items-center justify-center flex-shrink-0">
-                    <Mail className="w-5 h-5 text-gold" />
+                  <div className="w-10 h-10 rounded-lg bg-accent/20 flex items-center justify-center flex-shrink-0">
+                    <Mail className="w-5 h-5 text-accent" />
                   </div>
                   <div>
                     <p className="text-primary-foreground/70 text-sm">Email Us</p>
@@ -177,8 +177,8 @@ const ContactSection = () => {
                 </div>
 
                 <div className="flex items-start gap-4">
-                  <div className="w-10 h-10 rounded-lg bg-gold/20 flex items-center justify-center flex-shrink-0">
-                    <MapPin className="w-5 h-5 text-gold" />
+                  <div className="w-10 h-10 rounded-lg bg-accent/20 flex items-center justify-center flex-shrink-0">
+                    <MapPin className="w-5 h-5 text-accent" />
                   </div>
                   <div>
                     <p className="text-primary-foreground/70 text-sm">Visit Us</p>
@@ -192,7 +192,7 @@ const ContactSection = () => {
               </div>
             </div>
 
-            <div className="bg-gold/10 rounded-2xl p-6 border border-gold/20">
+            <div className="bg-accent/10 rounded-2xl p-6 border border-accent/20">
               <p className="text-foreground font-medium mb-2">
                 Available 24/7
               </p>

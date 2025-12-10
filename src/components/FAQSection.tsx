@@ -48,7 +48,7 @@ const FAQSection = () => {
     <section id="faq" className="section-padding bg-background">
       <div className="container-custom">
         <div className="text-center mb-16">
-          <span className="inline-block px-4 py-2 bg-gold/10 text-gold rounded-full text-sm font-medium mb-4">
+          <span className="inline-block px-4 py-2 bg-accent/10 text-accent rounded-full text-sm font-medium mb-4">
             FAQ
           </span>
           <h2 className="heading-lg text-foreground mb-4">

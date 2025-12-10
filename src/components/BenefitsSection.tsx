@@ -32,7 +32,7 @@ const BenefitsSection = () => {
     <section id="benefits" className="section-padding bg-background">
       <div className="container-custom">
         <div className="text-center mb-16">
-          <span className="inline-block px-4 py-2 bg-gold/10 text-gold rounded-full text-sm font-medium mb-4">
+          <span className="inline-block px-4 py-2 bg-accent/10 text-accent rounded-full text-sm font-medium mb-4">
             Why Choose Us
           </span>
           <h2 className="heading-lg text-foreground mb-4">
@@ -50,8 +50,8 @@ const BenefitsSection = () => {
               key={index}
               className="group bg-card rounded-2xl p-8 shadow-card hover:shadow-medium transition-all duration-300 hover:-translate-y-1 border border-border"
             >
-              <div className="w-14 h-14 rounded-xl bg-gold/10 flex items-center justify-center mb-6 group-hover:bg-gold/20 transition-colors">
-                <benefit.icon className="w-7 h-7 text-gold" />
+              <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-colors">
+                <benefit.icon className="w-7 h-7 text-primary" />
               </div>
               <h3 className="font-heading text-xl font-semibold text-foreground mb-3">
                 {benefit.title}
