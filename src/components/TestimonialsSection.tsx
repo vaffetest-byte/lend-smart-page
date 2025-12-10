@@ -31,8 +31,8 @@ const TestimonialsSection = () => {
   return (
     <section id="testimonials" className="section-padding bg-muted">
       <div className="container-custom">
-        <div className="text-center mb-16">
-          <span className="inline-block px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-medium mb-4">
+        <div className="text-center mb-14">
+          <span className="inline-block px-3 py-1.5 bg-primary/10 text-primary rounded-md text-sm font-medium mb-4">
             Client Reviews
           </span>
           <h2 className="heading-lg text-foreground mb-4">
@@ -44,33 +44,33 @@ const TestimonialsSection = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-3 gap-6">
           {testimonials.map((testimonial, index) => (
             <div
               key={index}
-              className="bg-card rounded-2xl p-8 shadow-card hover:shadow-medium transition-all duration-300 relative"
+              className="bg-card rounded-lg p-6 shadow-card hover:shadow-medium transition-all duration-300 relative border border-border"
             >
-              <Quote className="absolute top-6 right-6 w-10 h-10 text-accent/20" />
+              <Quote className="absolute top-5 right-5 w-8 h-8 text-primary/10" />
               
-              <div className="flex gap-1 mb-4">
+              <div className="flex gap-0.5 mb-4">
                 {[...Array(testimonial.rating)].map((_, i) => (
-                  <Star key={i} className="w-5 h-5 fill-accent text-accent" />
+                  <Star key={i} className="w-4 h-4 fill-accent text-accent" />
                 ))}
               </div>
 
-              <p className="text-foreground mb-6 leading-relaxed italic">
+              <p className="text-foreground mb-5 text-sm leading-relaxed">
                 "{testimonial.quote}"
               </p>
 
-              <div className="flex items-center gap-4 pt-4 border-t border-border">
+              <div className="flex items-center gap-3 pt-4 border-t border-border">
                 <img
                   src={testimonial.image}
                   alt={testimonial.name}
-                  className="w-14 h-14 rounded-full object-cover"
+                  className="w-11 h-11 rounded-full object-cover"
                 />
                 <div>
-                  <p className="font-semibold text-foreground">{testimonial.name}</p>
-                  <p className="text-sm text-muted-foreground">{testimonial.role}</p>
+                  <p className="font-semibold text-foreground text-sm">{testimonial.name}</p>
+                  <p className="text-xs text-muted-foreground">{testimonial.role}</p>
                 </div>
               </div>
             </div>
@@ -78,25 +78,25 @@ const TestimonialsSection = () => {
         </div>
 
         {/* Trust Badges */}
-        <div className="mt-16 text-center">
-          <div className="inline-flex items-center gap-3 bg-card rounded-full px-6 py-3 shadow-card">
+        <div className="mt-12 text-center">
+          <div className="inline-flex items-center gap-3 bg-card rounded-full px-5 py-2.5 shadow-card border border-border">
             <div className="flex -space-x-2">
               {testimonials.map((t, i) => (
                 <img
                   key={i}
                   src={t.image}
                   alt=""
-                  className="w-8 h-8 rounded-full border-2 border-card"
+                  className="w-7 h-7 rounded-full border-2 border-card"
                 />
               ))}
             </div>
             <div className="text-left">
               <div className="flex gap-0.5">
                 {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="w-4 h-4 fill-accent text-accent" />
+                  <Star key={i} className="w-3.5 h-3.5 fill-accent text-accent" />
                 ))}
               </div>
-              <p className="text-sm text-muted-foreground">
+              <p className="text-xs text-muted-foreground">
                 <span className="font-semibold text-foreground">4.9/5</span> from 2,000+ reviews
               </p>
             </div>

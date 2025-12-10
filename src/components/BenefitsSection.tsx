@@ -31,8 +31,8 @@ const BenefitsSection = () => {
   return (
     <section id="benefits" className="section-padding bg-background">
       <div className="container-custom">
-        <div className="text-center mb-16">
-          <span className="inline-block px-4 py-2 bg-accent/10 text-accent rounded-full text-sm font-medium mb-4">
+        <div className="text-center mb-14">
+          <span className="inline-block px-3 py-1.5 bg-primary/10 text-primary rounded-md text-sm font-medium mb-4">
             Why Choose Us
           </span>
           <h2 className="heading-lg text-foreground mb-4">
@@ -48,15 +48,15 @@ const BenefitsSection = () => {
           {benefits.map((benefit, index) => (
             <div
               key={index}
-              className="group bg-card rounded-2xl p-8 shadow-card hover:shadow-medium transition-all duration-300 hover:-translate-y-1 border border-border"
+              className="group bg-card rounded-lg p-6 shadow-card hover:shadow-medium transition-all duration-300 border border-border"
             >
-              <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-colors">
-                <benefit.icon className="w-7 h-7 text-primary" />
+              <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-5 group-hover:bg-primary/15 transition-colors">
+                <benefit.icon className="w-6 h-6 text-primary" />
               </div>
-              <h3 className="font-heading text-xl font-semibold text-foreground mb-3">
+              <h3 className="font-heading text-lg font-semibold text-foreground mb-2">
                 {benefit.title}
               </h3>
-              <p className="text-muted-foreground leading-relaxed">
+              <p className="text-muted-foreground text-sm leading-relaxed">
                 {benefit.description}
               </p>
             </div>
