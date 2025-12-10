@@ -25,7 +25,7 @@ const HeroSection = () => {
       <div className="relative z-10 container-custom section-padding">
         <div className="max-w-2xl">
           <div className="animate-slide-up" style={{ animationDelay: "0.1s" }}>
-            <span className="inline-block px-4 py-2 bg-gold/20 text-gold rounded-full text-sm font-medium mb-6">
+            <span className="inline-block px-4 py-2 bg-accent/20 text-accent rounded-full text-sm font-medium mb-6">
               Pre-Settlement Legal Funding
             </span>
           </div>
@@ -35,7 +35,7 @@ const HeroSection = () => {
             style={{ animationDelay: "0.2s" }}
           >
             Get funds fast to{" "}
-            <span className="text-gold">make ends meet.</span>
+            <span className="text-accent">make ends meet.</span>
           </h1>
 
           <p
@@ -69,7 +69,7 @@ const HeroSection = () => {
                 key={index}
                 className="flex items-center gap-2 text-primary-foreground/80"
               >
-                <feature.icon className="w-5 h-5 text-gold" />
+                <feature.icon className="w-5 h-5 text-accent" />
                 <span className="font-medium">{feature.text}</span>
               </div>
             ))}

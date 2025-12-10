@@ -56,8 +56,8 @@ const CalculatorSection = () => {
   // Donut chart data for company
   const companyChartData = [
     { name: "Net Amount", value: Math.max(0, companyNetAmount), color: "hsl(var(--primary))" },
-    { name: "Attorney Fees", value: attorneyFees, color: "hsl(210 40% 80%)" },
-    { name: "Advance + Cost", value: moneyNeeded + companyAdvanceCost, color: "hsl(var(--gold))" },
+    { name: "Attorney Fees", value: attorneyFees, color: "hsl(var(--blue-light))" },
+    { name: "Advance + Cost", value: moneyNeeded + companyAdvanceCost, color: "hsl(var(--accent))" },
   ];
 
   // Donut chart data for competitor
@@ -218,7 +218,7 @@ const CalculatorSection = () => {
 
               {/* Middle Column - Company (Featured) */}
               <div className="p-6 lg:p-8 bg-primary/5 relative">
-                <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-primary to-gold"></div>
+                <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-primary to-accent"></div>
                 
                 <div className="text-center mb-6">
                   <span className="inline-block px-3 py-1 bg-primary text-primary-foreground text-xs font-semibold rounded-full mb-2">
@@ -240,7 +240,7 @@ const CalculatorSection = () => {
                 <div className="mt-6 space-y-3">
                   <div className="flex items-center justify-between py-2 border-b border-border/50">
                     <span className="text-sm text-muted-foreground flex items-center gap-2">
-                      <Check className="w-4 h-4 text-green-500" />
+                      <Check className="w-4 h-4 text-primary" />
                       Cost of Advance
                     </span>
                     <span className="font-semibold text-primary">
@@ -270,8 +270,8 @@ const CalculatorSection = () => {
                 </div>
 
                 {savings > 0 && (
-                  <div className="mt-4 p-3 bg-green-50 border border-green-200 rounded-lg text-center">
-                    <span className="text-green-700 font-semibold text-sm">
+                  <div className="mt-4 p-3 bg-primary/10 border border-primary/20 rounded-lg text-center">
+                    <span className="text-primary font-semibold text-sm">
                       You Save {formatCurrency(savings)}!
                     </span>
                   </div>
@@ -297,7 +297,7 @@ const CalculatorSection = () => {
                 <div className="mt-6 space-y-3">
                   <div className="flex items-center justify-between py-2 border-b border-border/30">
                     <span className="text-sm text-muted-foreground flex items-center gap-2">
-                      <X className="w-4 h-4 text-red-400" />
+                      <X className="w-4 h-4 text-accent" />
                       Cost of Advance
                     </span>
                     <span className="font-semibold text-muted-foreground">
@@ -326,8 +326,8 @@ const CalculatorSection = () => {
                   </div>
                 </div>
 
-                <div className="mt-4 p-3 bg-red-50 border border-red-200 rounded-lg text-center">
-                  <span className="text-red-600 font-semibold text-sm">
+                <div className="mt-4 p-3 bg-accent/10 border border-accent/20 rounded-lg text-center">
+                  <span className="text-accent font-semibold text-sm">
                     Higher Cost: +{formatCurrency(savings)}
                   </span>
                 </div>
@@ -342,11 +342,11 @@ const CalculatorSection = () => {
               <span className="text-muted-foreground">Net Amount (Ours)</span>
             </div>
             <div className="flex items-center gap-2">
-              <div className="w-3 h-3 rounded-full bg-gold"></div>
+              <div className="w-3 h-3 rounded-full bg-accent"></div>
               <span className="text-muted-foreground">Advance + Cost</span>
             </div>
             <div className="flex items-center gap-2">
-              <div className="w-3 h-3 rounded-full" style={{ backgroundColor: 'hsl(210 40% 80%)' }}></div>
+              <div className="w-3 h-3 rounded-full bg-blue-light"></div>
               <span className="text-muted-foreground">Attorney Fees</span>
             </div>
           </div>

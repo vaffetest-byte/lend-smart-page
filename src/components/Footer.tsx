@@ -30,20 +30,20 @@ const socialLinks = [
 
 const Footer = () => {
   return (
-    <footer className="bg-primary text-primary-foreground">
+    <footer className="bg-foreground text-background">
       <div className="container-custom section-padding">
         <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8 lg:gap-12">
           {/* Brand */}
           <div className="col-span-2 md:col-span-4 lg:col-span-1">
             <a href="#" className="flex items-center gap-2 mb-6">
-              <div className="w-10 h-10 rounded-full bg-gold flex items-center justify-center">
-                <span className="text-navy-dark font-heading font-bold text-lg">LF</span>
+              <div className="w-10 h-10 rounded-full bg-accent flex items-center justify-center">
+                <span className="text-accent-foreground font-heading font-bold text-lg">LF</span>
               </div>
               <span className="font-heading font-semibold text-xl">
                 Legal Funding
               </span>
             </a>
-            <p className="text-primary-foreground/70 mb-6 text-sm leading-relaxed">
+            <p className="text-background/70 mb-6 text-sm leading-relaxed">
               Helping plaintiffs get the funds they need while waiting for their
               legal cases to settle. Fast, fair, and risk-free.
             </p>
@@ -53,7 +53,7 @@ const Footer = () => {
                   key={index}
                   href={social.href}
                   aria-label={social.label}
-                  className="w-10 h-10 rounded-lg bg-primary-foreground/10 flex items-center justify-center hover:bg-gold hover:text-navy-dark transition-colors"
+                  className="w-10 h-10 rounded-lg bg-background/10 flex items-center justify-center hover:bg-accent hover:text-accent-foreground transition-colors"
                 >
                   <social.icon className="w-5 h-5" />
                 </a>
@@ -69,7 +69,7 @@ const Footer = () => {
                 <li key={index}>
                   <a
                     href={link.href}
-                    className="text-primary-foreground/70 hover:text-gold transition-colors text-sm"
+                    className="text-background/70 hover:text-accent transition-colors text-sm"
                   >
                     {link.label}
                   </a>
@@ -86,7 +86,7 @@ const Footer = () => {
                 <li key={index}>
                   <a
                     href={link.href}
-                    className="text-primary-foreground/70 hover:text-gold transition-colors text-sm"
+                    className="text-background/70 hover:text-accent transition-colors text-sm"
                   >
                     {link.label}
                   </a>
@@ -103,7 +103,7 @@ const Footer = () => {
                 <li key={index}>
                   <a
                     href={link.href}
-                    className="text-primary-foreground/70 hover:text-gold transition-colors text-sm"
+                    className="text-background/70 hover:text-accent transition-colors text-sm"
                   >
                     {link.label}
                   </a>
@@ -117,20 +117,20 @@ const Footer = () => {
             <h4 className="font-heading font-semibold text-lg mb-4">Contact</h4>
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
-                <Phone className="w-5 h-5 text-gold flex-shrink-0 mt-0.5" />
-                <span className="text-primary-foreground/70 text-sm">
+                <Phone className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
+                <span className="text-background/70 text-sm">
                   1-800-123-4567
                 </span>
               </li>
               <li className="flex items-start gap-3">
-                <Mail className="w-5 h-5 text-gold flex-shrink-0 mt-0.5" />
-                <span className="text-primary-foreground/70 text-sm">
+                <Mail className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
+                <span className="text-background/70 text-sm">
                   info@legalfunding.com
                 </span>
               </li>
               <li className="flex items-start gap-3">
-                <MapPin className="w-5 h-5 text-gold flex-shrink-0 mt-0.5" />
-                <span className="text-primary-foreground/70 text-sm">
+                <MapPin className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
+                <span className="text-background/70 text-sm">
                   123 Financial District
                   <br />
                   New York, NY 10004
@@ -141,12 +141,12 @@ const Footer = () => {
         </div>
 
         {/* Bottom Bar */}
-        <div className="mt-16 pt-8 border-t border-primary-foreground/10">
+        <div className="mt-16 pt-8 border-t border-background/10">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-primary-foreground/60 text-sm">
+            <p className="text-background/60 text-sm">
               © {new Date().getFullYear()} Legal Funding. All rights reserved.
             </p>
-            <p className="text-primary-foreground/60 text-sm text-center md:text-right">
+            <p className="text-background/60 text-sm text-center md:text-right">
               Pre-settlement funding is not a loan. Repayment is contingent upon the
               outcome of your case.
             </p>

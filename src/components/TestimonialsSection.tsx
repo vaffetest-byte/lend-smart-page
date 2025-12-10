@@ -29,7 +29,7 @@ const testimonials = [
 
 const TestimonialsSection = () => {
   return (
-    <section id="testimonials" className="section-padding bg-cream">
+    <section id="testimonials" className="section-padding bg-muted">
       <div className="container-custom">
         <div className="text-center mb-16">
           <span className="inline-block px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-medium mb-4">
@@ -50,11 +50,11 @@ const TestimonialsSection = () => {
               key={index}
               className="bg-card rounded-2xl p-8 shadow-card hover:shadow-medium transition-all duration-300 relative"
             >
-              <Quote className="absolute top-6 right-6 w-10 h-10 text-gold/20" />
+              <Quote className="absolute top-6 right-6 w-10 h-10 text-accent/20" />
               
               <div className="flex gap-1 mb-4">
                 {[...Array(testimonial.rating)].map((_, i) => (
-                  <Star key={i} className="w-5 h-5 fill-gold text-gold" />
+                  <Star key={i} className="w-5 h-5 fill-accent text-accent" />
                 ))}
               </div>
 
@@ -93,7 +93,7 @@ const TestimonialsSection = () => {
             <div className="text-left">
               <div className="flex gap-0.5">
                 {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="w-4 h-4 fill-gold text-gold" />
+                  <Star key={i} className="w-4 h-4 fill-accent text-accent" />
                 ))}
               </div>
               <p className="text-sm text-muted-foreground">
